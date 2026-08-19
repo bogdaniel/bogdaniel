@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-label="Bogdan Olteanu — platform architecture, supply-chain security, and AI systems engineering">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070d"/>
+      <stop offset="0.55" stop-color="#0a0f1c"/>
+      <stop offset="1" stop-color="#0d1226"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.10"/>
+      <stop offset="0.6" stop-color="#818cf8" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1c2440" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- foundation -->
+  <rect width="1200" height="400" rx="12" fill="url(#bg)"/>
+  <rect width="1200" height="400" rx="12" fill="url(#grid)" opacity="0.5"/>
+  <rect width="1200" height="400" rx="12" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="1199" height="399" rx="11.5" fill="none" stroke="#273052" stroke-width="1"/>
+
+  <!-- system graph motif, right side -->
+  <g stroke="#2d3a63" stroke-width="1.5" fill="none" opacity="0.9">
+    <path d="M780 300 L900 232 L900 120 M900 232 L1030 300 M900 120 L1030 60 M900 120 L780 60 M1030 300 L1120 240 M900 232 L1030 168 L1030 60 M1030 168 L1120 240"/>
+  </g>
+  <g fill="#0a0f1c" stroke="url(#accent)" stroke-width="1.5">
+    <circle cx="900" cy="232" r="7"/>
+    <circle cx="900" cy="120" r="7"/>
+    <circle cx="1030" cy="300" r="5"/>
+    <circle cx="1030" cy="168" r="5"/>
+    <circle cx="1030" cy="60" r="5"/>
+    <circle cx="780" cy="300" r="5"/>
+    <circle cx="780" cy="60" r="5"/>
+    <circle cx="1120" cy="240" r="5"/>
+  </g>
+  <circle cx="900" cy="232" r="3" fill="#22d3ee"/>
+  <circle cx="900" cy="120" r="3" fill="#818cf8"/>
+
+  <!-- shield glyph: supply-chain security -->
+  <g transform="translate(1084,96)">
+    <path d="M0 -26 L22 -16 L22 6 C22 22 12 32 0 38 C-12 32 -22 22 -22 6 L-22 -16 Z"
+          fill="#0d1226" stroke="url(#accent)" stroke-width="1.5"/>
+    <path d="M-9 4 L-3 11 L10 -6" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- text block -->
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
+    <text x="72" y="118" font-size="15" letter-spacing="4" fill="#5eead4">// SYSTEMS · SECURITY · AI</text>
+    <text x="72" y="188" font-size="58" font-weight="700" fill="#f1f5f9" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Bogdan Olteanu</text>
+    <rect x="74" y="212" width="150" height="4" rx="2" fill="url(#accent)"/>
+    <text x="72" y="262" font-size="22" fill="#c7d2fe" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Platform architecture · Software supply-chain security · AI-enabled systems</text>
+    <text x="72" y="318" font-size="16" fill="#7c8db5">Building <tspan fill="#a5b4fc" font-weight="600">Zenchron Dynamics</tspan> — enterprise AI &#38; critical systems engineering</text>
+  </g>
+</svg>
