@@ -1,60 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-label="Bogdan Olteanu — platform architecture, supply-chain security, and AI systems engineering">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="Bogdan Olteanu — platform architecture, supply-chain security, and AI systems engineering. Building Zenchron Dynamics.">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#05070d"/>
-      <stop offset="0.55" stop-color="#0a0f1c"/>
-      <stop offset="1" stop-color="#0d1226"/>
+      <stop offset="0" stop-color="#04060c"/>
+      <stop offset="0.5" stop-color="#090e1a"/>
+      <stop offset="1" stop-color="#0d1228"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#22d3ee"/>
       <stop offset="1" stop-color="#818cf8"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.78" cy="0.42" r="0.55">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.10"/>
-      <stop offset="0.6" stop-color="#818cf8" stop-opacity="0.05"/>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#22d3ee" stop-opacity="0.7"/>
+      <stop offset="0.75" stop-color="#818cf8" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.35" r="0.6">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.12"/>
+      <stop offset="0.55" stop-color="#818cf8" stop-opacity="0.05"/>
       <stop offset="1" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#1c2440" stroke-width="1"/>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#182038" stroke-width="1"/>
     </pattern>
   </defs>
 
   <!-- foundation -->
-  <rect width="1200" height="400" rx="12" fill="url(#bg)"/>
-  <rect width="1200" height="400" rx="12" fill="url(#grid)" opacity="0.5"/>
-  <rect width="1200" height="400" rx="12" fill="url(#glow)"/>
-  <rect x="0.5" y="0.5" width="1199" height="399" rx="11.5" fill="none" stroke="#273052" stroke-width="1"/>
+  <rect width="1200" height="420" rx="14" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="14" fill="url(#grid)" opacity="0.55"/>
+  <rect width="1200" height="420" rx="14" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="1199" height="419" rx="13.5" fill="none" stroke="#28325a" stroke-width="1"/>
 
-  <!-- system graph motif, right side -->
-  <g stroke="#2d3a63" stroke-width="1.5" fill="none" opacity="0.9">
-    <path d="M780 300 L900 232 L900 120 M900 232 L1030 300 M900 120 L1030 60 M900 120 L780 60 M1030 300 L1120 240 M900 232 L1030 168 L1030 60 M1030 168 L1120 240"/>
+  <!-- blueprint corner ticks -->
+  <g stroke="#3b4a7a" stroke-width="1.5" opacity="0.9">
+    <path d="M28 46 V28 H46 M1154 28 H1172 V46 M1172 374 V392 H1154 M46 392 H28 V374" fill="none"/>
   </g>
-  <g fill="#0a0f1c" stroke="url(#accent)" stroke-width="1.5">
-    <circle cx="900" cy="232" r="7"/>
-    <circle cx="900" cy="120" r="7"/>
-    <circle cx="1030" cy="300" r="5"/>
-    <circle cx="1030" cy="168" r="5"/>
-    <circle cx="1030" cy="60" r="5"/>
-    <circle cx="780" cy="300" r="5"/>
-    <circle cx="780" cy="60" r="5"/>
-    <circle cx="1120" cy="240" r="5"/>
-  </g>
-  <circle cx="900" cy="232" r="3" fill="#22d3ee"/>
-  <circle cx="900" cy="120" r="3" fill="#818cf8"/>
 
-  <!-- shield glyph: supply-chain security -->
-  <g transform="translate(1084,96)">
-    <path d="M0 -26 L22 -16 L22 6 C22 22 12 32 0 38 C-12 32 -22 22 -22 6 L-22 -16 Z"
-          fill="#0d1226" stroke="url(#accent)" stroke-width="1.5"/>
-    <path d="M-9 4 L-3 11 L10 -6" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- node lattice, right side -->
+  <g stroke="#2c3a66" stroke-width="1.5" fill="none">
+    <path d="M770 96 L890 44 L1010 96 L1010 208 L890 260 L770 208 Z"/>
+    <path d="M890 44 L890 152 M770 96 L890 152 L1010 96 M890 152 L890 260"/>
+    <path d="M1010 96 L1118 60 M1010 208 L1118 244 M890 260 L960 330 M770 208 L700 276"/>
   </g>
+  <g fill="#090e1a" stroke="url(#accent)" stroke-width="1.5">
+    <circle cx="890" cy="152" r="8"/>
+    <circle cx="890" cy="44" r="5.5"/>
+    <circle cx="770" cy="96" r="5.5"/>
+    <circle cx="1010" cy="96" r="5.5"/>
+    <circle cx="770" cy="208" r="5.5"/>
+    <circle cx="1010" cy="208" r="5.5"/>
+    <circle cx="890" cy="260" r="5.5"/>
+    <circle cx="1118" cy="60" r="4.5"/>
+    <circle cx="1118" cy="244" r="4.5"/>
+    <circle cx="960" cy="330" r="4.5"/>
+    <circle cx="700" cy="276" r="4.5"/>
+  </g>
+  <circle cx="890" cy="152" r="3.5" fill="#22d3ee"/>
+
+  <!-- shield: supply-chain security -->
+  <g transform="translate(1080,148)">
+    <path d="M0 -30 L25 -19 L25 7 C25 25 14 36 0 43 C-14 36 -25 25 -25 7 L-25 -19 Z"
+          fill="#0b1122" stroke="url(#accent)" stroke-width="1.6"/>
+    <path d="M-10 4 L-3 12 L12 -7" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- delivery rail with gate checkpoints -->
+  <rect x="80" y="356" width="1040" height="2" fill="url(#rail)"/>
+  <g fill="#090e1a" stroke="#4c5a8f" stroke-width="1.5">
+    <circle cx="300" cy="357" r="5"/>
+    <circle cx="600" cy="357" r="5"/>
+    <circle cx="900" cy="357" r="5"/>
+  </g>
+  <circle cx="300" cy="357" r="2" fill="#22d3ee"/>
+  <circle cx="600" cy="357" r="2" fill="#5eead4"/>
+  <circle cx="900" cy="357" r="2" fill="#818cf8"/>
 
   <!-- text block -->
-  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
-    <text x="72" y="118" font-size="15" letter-spacing="4" fill="#5eead4">// SYSTEMS · SECURITY · AI</text>
-    <text x="72" y="188" font-size="58" font-weight="700" fill="#f1f5f9" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Bogdan Olteanu</text>
-    <rect x="74" y="212" width="150" height="4" rx="2" fill="url(#accent)"/>
-    <text x="72" y="262" font-size="22" fill="#c7d2fe" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Platform architecture · Software supply-chain security · AI-enabled systems</text>
-    <text x="72" y="318" font-size="16" fill="#7c8db5">Building <tspan fill="#a5b4fc" font-weight="600">Zenchron Dynamics</tspan> — enterprise AI &#38; critical systems engineering</text>
+  <g>
+    <text x="72" y="112" font-size="16" letter-spacing="5" fill="#5eead4" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">// SYSTEMS · SECURITY · AI</text>
+    <text x="72" y="186" font-size="64" font-weight="700" fill="#f4f7fb" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Bogdan Olteanu</text>
+    <rect x="75" y="212" width="164" height="4" rx="2" fill="url(#accent)"/>
+    <text x="72" y="264" font-size="25" fill="#cdd7fe" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Platform architecture · Supply-chain security · AI systems</text>
+    <text x="72" y="312" font-size="19" fill="#8b9bc7" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">Building <tspan fill="#a5b4fc" font-weight="600">Zenchron Dynamics</tspan> — enterprise AI &#38; critical systems</text>
   </g>
 </svg>
