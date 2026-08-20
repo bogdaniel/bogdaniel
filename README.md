@@ -15,6 +15,7 @@ Reusable security, quality, and release-gate engine for code, containers, CI, an
 - **Role** — creator & maintainer
 - **Built with** — Semgrep rules, OPA/Rego policies, SBOM (Syft), secret & vulnerability scanning, reusable GitHub Actions, per-stack profiles (PHP/Laravel/Symfony, Node, Docker)
 - **Status** — released ([v2.x engine-only line](https://github.com/bogdaniel/sentinel-shield/releases)), CI green, actively maintained
+- **Go deeper** — [documentation hub](https://github.com/bogdaniel/sentinel-shield/blob/master/docs/index.md): quickstart, production rollout, enterprise hardening
 
 ### [Zenchron Foundry](https://github.com/zenchron-dynamics/zenchron-foundry) — hardened container platform
 
@@ -22,7 +23,7 @@ Golden-image platform producing hardened, signed, scanned, SBOM-backed base imag
 
 - **Role** — primary author of the public change history
 - **Built with** — Docker, GitHub Actions, image signing & provenance, SBOM/CVE ledgers
-- **Status** — in production use at Zenchron, actively maintained
+- **Status** — in production use at Zenchron, actively maintained · [published images](https://github.com/orgs/zenchron-dynamics/packages)
 
 ### [Aegis Codex](https://github.com/bogdaniel/aegis-codex) — governance for AI-assisted development
 
